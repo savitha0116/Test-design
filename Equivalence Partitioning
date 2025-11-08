@@ -1,0 +1,6 @@
+Equivalence Partitioning (EP) is a black-box testing technique used to reduce the number of test cases by dividing input data into groups or partitions that are expected to behave the same way.
+|  Test Case ID    |    Test Scenario        |  Input (Age)    |      Expected Output              |  Partition Type     |
+| ---------------- | ----------------------- | --------------- | --------------------------------- | ------------------- |
+| TC001            | Test below valid range  | 17              | Error: “Age must be 18 or above.” | Invalid Partition 1 |
+| TC002            | Test within valid range | 30              | Accepted                          | Valid Partition     |
+| TC003            | Test above valid range  | 61              | Error: “Age must be 60 or below.” | Invalid Partition 2 |

@@ -1,0 +1,26 @@
+                    Boundary Value Analysis
+Boundary Value Analysis (BVA) is a software testing technique used to identify errors at the boundaries of input domains rather than within the range of valid input values.
+
+Boundary Values:
+Case	                Test Input	                    Expected Result
+Below minimum            	17	                            Invalid
+Minimum boundary	        18	                             Valid
+Just above minimum	      19	                             Valid
+Just below maximum	      59	                             Valid
+Maximum boundary	        60	                             Valid
+Above maximum	            61	                            Invalid
+
+
+| Test Case ID            Test Scenario               Input (Age)           Expected Output                       Remarks
+| ---------------- | --------------------------- | --------------- | ---------------------------------------- | -------------- |
+| TC001            | Test below minimum age      | 17              | Error message: "Age must be 18 or above" | Negative test  |
+| TC002            | Test minimum age            | 18              | Accepted                                 | Boundary value |
+| TC003            | Test just above minimum age | 19              | Accepted                                 | Positive test  |
+| TC004            | Test just below maximum age | 59              | Accepted                                 | Positive test  |
+| TC005            | Test maximum age            | 60              | Accepted                                 | Boundary value |
+| TC006            | Test above maximum age      | 61              | Error message: "Age must be 60 or below" | Negative test  |
+
+
+
+
+
